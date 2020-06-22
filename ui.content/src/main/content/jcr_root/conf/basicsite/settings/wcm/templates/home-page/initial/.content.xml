@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-06-29T15:20:46.482-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/basicsite/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="basicsite/components/structure/page">
+        <root jcr:primaryType="nt:unstructured">
+            <responsivegrid
+                jcr:created="{Date}2019-06-28T21:40:49.200-07:00"
+                jcr:createdBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <responsivegrid
+                    jcr:lastModified="{Date}2019-06-29T10:57:37.046-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <responsivegrid
+                        jcr:created="{Date}2019-06-29T00:00:46.323-06:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2019-06-29T14:17:45.135-06:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="basicsite/components/structure/responsivegrid"
+                        verticalSpacing="rhythm--large">
+                        <cq:responsive jcr:primaryType="nt:unstructured"/>
+                        <homeheader
+                            jcr:created="{Date}2019-06-29T14:13:04.811-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T14:13:04.811-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="basicsite/components/content/homeheader"
+                            overlayedTitle="Trusted articles and stories about joint replacement experiences."/>
+                        <text
+                            jcr:created="{Date}2019-06-29T14:13:04.811-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T14:13:04.811-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="basicsite/components/content/text"
+                            text="Ready Patient strives to cultivate hope.&#xa;&#xa;&#xa;&#xa;It’s our passion to provide trusted, useful, and engaging content that supports your personal journey to alleviate pain. We want you to feel connected to people, resources, and tools that will help you take back control.&#xa;&#xa;&#xa;&#xa;Together, we’ll help you Get There.&#xa;"/>
+                        <title_2052202737
+                            jcr:created="{Date}2019-06-29T14:29:49.898-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T14:31:59.712-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Featured Articles"
+                            sling:resourceType="basicsite/components/content/title"
+                            alignment="right"
+                            type="h3"/>
+                        <text_205220273701
+                            jcr:created="{Date}2019-06-29T14:13:04.811-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T14:13:04.811-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="basicsite/components/content/text"
+                            text="Ready Patient strives to cultivate hope.&#xa;&#xa;&#xa;&#xa;It’s our passion to provide trusted, useful, and engaging content that supports your personal journey to alleviate pain. We want you to feel connected to people, resources, and tools that will help you take back control.&#xa;&#xa;&#xa;&#xa;Together, we’ll help you Get There.&#xa;"/>
+                        <articlecard
+                            jcr:created="{Date}2019-06-29T15:08:49.016-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T15:08:49.016-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="basicsite/components/content/articlecard"
+                            articleType="related-article"
+                            pathArticle="/content/basicsite/en"/>
+                        <title
+                            jcr:created="{Date}2019-06-29T15:12:03.357-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T15:12:03.357-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Featured Articles"
+                            sling:resourceType="basicsite/components/content/title"
+                            alignment="center"
+                            type="h3"/>
+                        <flavor_add_module
+                            jcr:created="{Date}2019-06-29T15:12:16.102-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T15:12:16.102-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="basicsite/components/content/flavor-add-module">
+                            <supporting jcr:primaryType="nt:unstructured"/>
+                        </flavor_add_module>
+                        <taskcard_container
+                            jcr:created="{Date}2019-06-29T15:20:46.476-06:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2019-06-29T15:20:46.476-06:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="basicsite/components/content/tasks/taskcard-container"
+                            cardsSectionTitle="Here's more you can do"
+                            maxCardItems="3">
+                            <task-card-0
+                                jcr:lastModified="{Date}2019-06-29T15:15:16.507-06:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="basicsite/components/content/tasks/taskcard"
+                                fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/surfer-wave-02.jpg"
+                                link="/content/basicsite/en"
+                                text="Curabitur in finibus metus. Suspendisse ac odio"
+                                title="Find A Doctor"/>
+                            <task-card-1
+                                jcr:lastModified="{Date}2019-06-29T15:15:47.124-06:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="basicsite/components/content/tasks/taskcard"
+                                fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/northern-lights.jpg"
+                                link="/content/basicsite/en"
+                                text="Curabitur in finibus metus. Suspendisse ac odio "
+                                title="About Us"/>
+                            <task-card-2
+                                jcr:lastModified="{Date}2019-06-29T15:16:20.193-06:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="basicsite/components/content/tasks/taskcard"
+                                fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/northern-lights.jpg"
+                                link="/content/basicsite/en"
+                                text="Curabitur in finibus metus. Suspendisse ac odio "
+                                title="Get Updates"/>
+                        </taskcard_container>
+                    </responsivegrid>
+                </responsivegrid>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

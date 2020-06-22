@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Styled Layout Container"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <verticalSpacing
+                                                    granite:class="core-title-sizes"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Vertical Spacing"
+                                                    name="./verticalSpacing">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="None"
+                                                            value=""/>
+                                                    <default
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Small"
+                                                            value="rhythm--small"/>
+                                                    <small
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Medium"
+                                                            value="rhythm--default"/>
+                                                    <large
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Large"
+                                                            value="rhythm--large"/>
+                                                    <extralarge
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Extra Large"
+                                                            value="rhythm--extra-large"/>                                                            
+                                                </items>
+                                            </verticalSpacing>
+                                            <gutter
+                                                granite:class="core-title-sizes"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Gutter"
+                                                name="./gutter">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="None"
+                                                        value=""/>
+                                                    <default
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Left"
+                                                        value="aemGridGutter--left"/>
+                                                    <small
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Right"
+                                                        value="aemGridGutter--right"/>
+                                                    <large
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Both"
+                                                        value="aemGridGutter--both"/>
+                                                </items>
+                                            </gutter>
+                                            <flex
+                                                    granite:class="core-title-sizes"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="FlexBox Behavior"
+                                                    fieldDescription="Reverses column order on phone for responsive layout."
+                                                    name="./flexMode">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <none
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Default"
+                                                            value=""/>
+                                                    <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Column"
+                                                            value="flex flex--column"/>
+                                                    <desktopColumn
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Column Reverse (Desktop)"
+                                                            value="flex flex--column-reverse"/>
+                                                    <phoneColumn
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Column Reverse (Phone)"
+                                                            value="phone--column-reverse"/>
+                                                    <row
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Row"
+                                                            value="flex flex--row"/>
+                                                    <desktopRow
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Row Reverse (Desktop)"
+                                                            value="flex flex--row-reverse"/>
+                                                    <phoneRow
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Row Reverse (Phone)"
+                                                            value="phone--row-reverse"/>
+                                                </items>
+                                            </flex>
+                                            <linkURL jcr:primaryType="nt:unstructured"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

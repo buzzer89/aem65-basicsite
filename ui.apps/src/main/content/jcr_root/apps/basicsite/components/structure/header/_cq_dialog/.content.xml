@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Main Navigation Header"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-list--editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <configs
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Configurations"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset1
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Brand"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <logo
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                name="./logoPath"
+                                                rootPath="/content/dam"
+                                                fieldLabel="Select a logo"/>
+                                            <link
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                name="./linkToHome"
+                                                rootPath="/content/"
+                                                fieldLabel="Link to home page"/>
+                                        </items>
+                                    </fieldset1>
+                                    <fieldset2
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Search"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <link
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    name="./searchLink"
+                                                    rootPath="/content/basicsite"
+                                                    fieldLabel="Search Path"/>
+                                        </items>
+                                    </fieldset2>
+                                    <fieldset3
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Mega Menu"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <menuItems
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Add Body part landing page"
+                                                name="./menuItems">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./bodyParts">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <bodyPartRoot
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./bodyPartRoot"
+                                                            rootPath="/content/"
+                                                            fieldLabel="Select the body part landing page"/>
+                                                        <fieldsetSub
+                                                                jcr:primaryType="nt:unstructured"
+                                                                jcr:title="Journeys"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <column
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldDescription="Enter Journey"
+                                                                        name="./journeys">
+                                                                    <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                                            name="./journeyLinks">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <journeyTitle
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    emptyText="Item label"
+                                                                                    name="./journeyTitle"/>
+                                                                            <journeyData
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    emptyText="Data Attribute"
+                                                                                    name="./journeyData"/>
+                                                                        </items>
+                                                                    </field>
+                                                                </column>
+                                                            </items>
+                                                        </fieldsetSub>
+                                                    </items>
+                                                </field>
+                                            </menuItems>
+                                        </items>
+                                    </fieldset3>
+                                    <fieldset4
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="CTA Command Line"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <cta
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Select up to 3 links"
+                                                fieldLabel="Top header links"
+                                                name="./commandLinks">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./ctaLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <ctaLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            rootPath="/content/" />
+                                                    </items>
+                                                </field>
+                                            </cta>
+                                        </items>
+                                    </fieldset4>
+                                    <fieldset5
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Social Icon Links"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Select the amount of links that display well on current design (3 are suggested)"
+                                                name="./socialIcons">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./socialIconLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <icons
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldLabel="Social icon"
+                                                            name="./title">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <tw
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Twitter"
+                                                                    value="twitter"/>
+                                                                <fb
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    selected="true"
+                                                                    text="Facebook"
+                                                                    value="facebook"/>
+                                                                <ig
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Instagram"
+                                                                    value="instagram"/>
+                                                                <yt
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Youtube"
+                                                                    value="youtube"/>
+                                                            </items>
+                                                        </icons>
+                                                        <col4Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            emptyText="Social profile page" />
+                                                    </items>
+                                                </field>
+                                            </column4>
+                                        </items>
+                                    </fieldset5>
+                                </items>
+                            </column>
+                        </items>
+                    </configs>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

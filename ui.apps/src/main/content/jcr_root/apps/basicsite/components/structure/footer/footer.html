@@ -1,0 +1,66 @@
+<!--/* DO NOT EDIT!!! -- THIS FILE IS AUTO GENERATED -- DO NOT EDIT!!! */-->
+<!--/* (see: /elements/modifiers/Sly/Sly.example.jsx) */-->
+
+<div class="footer footer--default" data-sly-use.selectorCheck="com.adobe.aem.guides.basicsite.core.models.utils.SelectorCheck" data-sly-test="${!selectorCheck.isEmbedded}">
+  <div class="wrapper wrapper--default padding padding-size--medium">
+    <div class="rhythm--default">
+      <sly data-sly-use.footer="com.adobe.aem.guides.basicsite.core.models.FooterModel" data-sly-unwrap>
+      </sly>
+      <div class="top-row">
+        <div class="navigation__column">
+          <sly data-sly-list="${footer.columnOneLinks}">
+
+            <a class="link link--default cta-promo" data-promo-type="${item.title}" href="${item.path @ context='uri'}.html" target="${item.target}">${item.title}</a>
+
+
+          </sly>
+        </div>
+        <div class="navigation__column">
+          <sly data-sly-list="${footer.columnTwoLinks}">
+
+            <a class="link link--default cta-promo" data-promo-type="${item.title}" href="${item.path @ context='uri'}.html" target="${item.target}">${item.title}</a>
+
+
+          </sly>
+        </div>
+        <div class="navigation__column">
+          <sly data-sly-list="${footer.columnThreeLinks}">
+
+            <a class="link link--default cta-promo" data-promo-type="${item.title}" href="${item.path @ context='uri'}.html" target="${item.target}">${item.title}</a>
+
+
+          </sly>
+        </div>
+        <div class="navigation__column navigation__social navigation__social--footer" data-sly-test="${footer.columnFourLinks}">
+          <h3 class="heading heading--default heading--medium heading--h3" data-sly-text="${(properties.fourthColumnTitle) ? properties.fourthColumnTitle : ''}">Connect with us</h3>
+          <div class="navigation navigation--default" data-sly-list="${footer.columnFourLinks}">
+
+            <sly data-sly-test="${item.link}">
+              <a class="link link--default social-link" data-social-source="${item.title}" href="${item.link @ context='uri'}" target="${item.target}">
+                <svg class="icon icon--${item.title} icon--normal icon--default">
+                  <use xlink:href="#icon-${item.title}">
+                  </use>
+                </svg>
+              </a>
+            </sly>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="rhythm--deep-default middle-row">
+        <div class="rich-text rich-text--default">
+          ${properties.legalText @context="html"}
+
+        </div>
+      </div>
+      <div class="bottom-row">
+        <div class="navigation navigation--default navigation__utility navigation__utility--footer" data-sly-list="${footer.columnSixLinks}">
+          <a class="link link--default" href="${item.link @context='uri'}" target="${item.target}" data-sly-text="${(item.title) ? item.title : ''}">UnitedHealthcare.com</a>
+
+        </div>
+        <div class="brand brand--footer">© 2020 United HealthCare Services, Inc.</div>
+      </div>
+    </div>
+  </div>
+</div>

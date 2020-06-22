@@ -1,0 +1,70 @@
+<!--/* DO NOT EDIT!!! -- THIS FILE IS AUTO GENERATED -- DO NOT EDIT!!! */-->
+<!--/* (see: undefined) */-->
+
+<template data-sly-template.articleCardTemplate="${@ relatedReadings}">
+  <div class="articlecard articlecard--default">
+    <sly data-sly-use.propsArticle="com.adobe.aem.guides.basicsite.core.models.ArticleCardModel" data-sly-test.isArticleCardComponent="${resource.resourceType == 'basicsite/components/content/articlecard'}">
+    </sly>
+    <sly data-sly-test.selectedtype="${relatedReadings.articleType ? relatedReadings.articleType : properties.articleType}">
+    </sly>
+    <sly data-sly-test.storytitle="${relatedReadings.storytitle ? relatedReadings.storytitle : propsArticle.storytitle}">
+    </sly>
+    <sly data-sly-test.overlayColor="${relatedReadings.overlayColor ? relatedReadings.overlayColor : propsArticle.overlayColor}">
+    </sly>
+    <sly data-sly-test.img="${relatedReadings.imageQ ? relatedReadings.imageQ : propsArticle.imageQ}">
+    </sly>
+    <sly data-sly-test.quote="${relatedReadings.quote ? relatedReadings.quote : propsArticle.quote}">
+    </sly>
+    <sly data-sly-test.tagColorName="${relatedReadings.tagColorName ? relatedReadings.tagColorName : propsArticle.tagColorName}">
+    </sly>
+    <sly data-sly-test.themetag="${relatedReadings.themetag ? relatedReadings.themetag : propsArticle.themetag}">
+    </sly>
+    <sly data-sly-test.pathArticle="${relatedReadings.pathArticle ? relatedReadings.pathArticle : properties.pathArticle}">
+    </sly>
+    <div data-sly-unwrap="true">
+      <sly data-sly-test.isMiniArticle="${selectedtype == 'mini-article'}">
+        <section class="mini-article">
+          <div class="imageQ" style="background-image:url(${img ?  img  : '//placehold.co/696x696' @context='uri'})">
+          </div>
+          <div class="title-desc">
+            <h4 class="heading heading--default heading--medium heading--h4 article-title">
+              <a class="link link--default" href="${pathArticle}.html" data-sly-text="${storytitle}">
+              </a>
+            </h4>
+          </div>
+        </section>
+      </sly>
+      <a class="link link--default linkcard ${selectedtype ? selectedtype : 'related-article' }" href="${pathArticle}.html" data-article-title="${storytitle}" data-promo-type="${selectedtype ? selectedtype : 'related-article' }" data-theme-tag="${themetag}" data-sly-test.miniarticle="${!isMiniArticle}">
+        <section class="${selectedtype ? selectedtype : 'related-article' } image-quote">
+          <div class="shadow-img">
+            <div style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0))" class="shadow">
+            </div>
+            <div style="background-color:${overlayColor @context='styleString'}" class="overlay">
+            </div>
+            <sly data-sly-test.placeholder="${selectedtype == 'next-article' ? '//placehold.co/396x340' : '//placehold.co/396x165'}">
+            </sly>
+
+            <div class="imageQ" style="background-image:url(${img ? img : '//placehold.co/696x696' @context='uri'})">
+            </div>
+
+
+          </div>
+          <span class="quote">${quote}</span>
+          <sly data-sly-test.themeTag="${themetag}">
+            <span class="theme-tag tagcolor-${tagColorName}">${themeTag}</span>
+          </sly>
+        </section>
+        <section class="${selectedtype ? selectedtype : 'related-article' }  title-desc">
+          <div class="title-desc-div">
+            <h4 class="heading heading--default heading--medium heading--h4 article-title">
+              <sly data-sly-text="${storytitle}">
+              </sly>
+            </h4>
+            <p class="article-description" data-sly-text="${propsArticle.description}" data-sly-test="${selectedtype == 'next-article'}">
+            </p>
+          </div>
+        </section>
+      </a>
+    </div>
+  </div>
+</template>

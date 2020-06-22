@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Footer Section"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-list--editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <configs
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Configurations"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <fieldset1
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Links Column 1"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Select the amount of links that display well on current design"
+                                                name="./columnOneLinks">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./firstColumnLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <col1Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            rootPath="/content/" />
+                                                        <col1target
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                name="./target">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <same
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Same tab"
+                                                                        value="_self"/>
+                                                                <blank
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="New tab"
+                                                                        value="_blank"/>
+                                                            </items>
+                                                        </col1target>
+                                                    </items>
+                                                </field>
+                                            </column1>
+                                        </items>
+                                    </fieldset1>
+                                    <fieldset2
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Links Column 2"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column2
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Select the amount of links that display well on current design"
+                                                name="./columnTwoLinks">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./secondColumnLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <col2Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            rootPath="/content/" />
+                                                        <col2target
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                name="./target">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <same
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Same tab"
+                                                                        value="_self"/>
+                                                                <blank
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="New tab"
+                                                                        value="_blank"/>
+                                                            </items>
+                                                        </col2target>
+                                                    </items>
+                                                </field>
+                                            </column2>
+                                        </items>
+                                    </fieldset2>
+                                    <fieldset3
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Links Column 3"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column3
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Select the amount of links that display well on current design"
+                                                name="./columnThreeLinks">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./thirdColumnLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <col3Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            rootPath="/content/" />
+                                                        <col3target
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                name="./target">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <same
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Same tab"
+                                                                        value="_self"/>
+                                                                <blank
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="New tab"
+                                                                        value="_blank"/>
+                                                            </items>
+                                                        </col3target>
+                                                    </items>
+                                                </field>
+                                            </column3>
+                                        </items>
+                                    </fieldset3>
+                                    <fieldset4
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Social Links Column 4"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                name="./fourthColumnTitle"
+                                                fieldLabel="Social link title"/>
+                                            <column4
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Select the amount of links that display well on current design"
+                                                name="./columnFourLinks">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./fourthColumnLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <icons
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                                            fieldLabel="Social icon"
+                                                            name="./title">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <tw
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Twitter"
+                                                                    value="twitter"/>
+                                                                <fb
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    selected="true"
+                                                                    text="Facebook"
+                                                                    value="facebook"/>
+                                                                <ig
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Instagram"
+                                                                    value="instagram"/>
+                                                                <yt
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Youtube"
+                                                                    value="youtube"/>
+                                                            </items>
+                                                        </icons>
+                                                        <col4Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            emptyText="Social profile page" />
+                                                        <col4target
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                name="./target">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <same
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Same tab"
+                                                                        value="_self"/>
+                                                                <blank
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="New tab"
+                                                                        value="_blank"/>
+                                                            </items>
+                                                        </col4target>
+                                                    </items>
+                                                </field>
+                                            </column4>
+                                        </items>
+                                    </fieldset4>
+                                    <fieldset5
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Individual fields"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <legalText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldLabel="Legal text"
+                                                name="./legalText"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <col5target
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    name="./target">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <same
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Same tab"
+                                                            value="_self"/>
+                                                    <blank
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="New tab"
+                                                            value="_blank"/>
+                                                </items>
+                                            </col5target>
+                                        </items>
+                                    </fieldset5>
+                                    <fieldset6
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Bottom row links"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <column6
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Add 4 external links"
+                                                name="./columnSixLinks">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./sixthColumnLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <col6Title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            name="./title"
+                                                            fieldLabel="Link title" />
+                                                        <col6Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="./link"
+                                                            rootPath="/content/" />
+                                                        <col6target
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                                                name="./target">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <same
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Same tab"
+                                                                        value="_self"/>
+                                                                <blank
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="New tab"
+                                                                        value="_blank"/>
+                                                            </items>
+                                                        </col6target>
+                                                    </items>
+                                                </field>
+                                            </column6>
+                                        </items>
+                                    </fieldset6>
+                                </items>
+                            </column>
+                        </items>
+                    </configs>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

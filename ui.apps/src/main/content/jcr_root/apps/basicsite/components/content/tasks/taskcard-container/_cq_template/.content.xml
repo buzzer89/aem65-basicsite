@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2019-06-29T15:13:32.854-06:00"
+    jcr:createdBy="admin"
+    jcr:lastModified="{Date}2019-06-29T15:13:48.463-06:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="basicsite/components/content/tasks/taskcard-container"
+    cardsSectionTitle="Here's more you can do"
+    maxCardItems="3">
+    <task-card-0
+        jcr:lastModified="{Date}2019-06-29T15:15:16.507-06:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="basicsite/components/content/tasks/taskcard"
+        fileReference=""
+        link="/content/basicsite/en"
+        text="Curabitur in finibus metus. Suspendisse ac odio"
+        title="Find A Doctor"/>
+    <task-card-1
+        jcr:lastModified="{Date}2019-06-29T15:15:47.124-06:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="basicsite/components/content/tasks/taskcard"
+        fileReference=""
+        link="/content/basicsite/en"
+        text="Curabitur in finibus metus. Suspendisse ac odio "
+        title="About Us"/>
+    <task-card-2
+        jcr:lastModified="{Date}2019-06-29T15:16:20.193-06:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="basicsite/components/content/tasks/taskcard"
+        fileReference=""
+        link="/content/basicsite/en"
+        text="Curabitur in finibus metus. Suspendisse ac odio "
+        title="Get Updates"/>
+</jcr:root>

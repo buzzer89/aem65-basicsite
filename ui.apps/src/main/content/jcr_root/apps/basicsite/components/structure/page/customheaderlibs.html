@@ -1,0 +1,66 @@
+<!--/*
+    Copyright 2017 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<!--/* Responsive viewport scale settings */-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/etc.clientlibs/basicsite/clientlibs/main/resources/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/etc.clientlibs/basicsite/clientlibs/main/resources/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/etc.clientlibs/basicsite/clientlibs/main/resources/img/favicon-16x16.png">
+<link rel="shortcut icon" href="/etc.clientlibs/basicsite/clientlibs/main/resources/img/favicon.ico">
+
+<!--/* Main Stylesheets */-->
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+     <sly data-sly-call="${clientlib.all @ categories='basicsite.dependencies'}"/>
+     <sly data-sly-call="${clientlib.css @ categories='basicsite.main'}"/>
+</sly>
+
+<sly data-sly-resource="${'ogimage' @ resourceType='basicsite/components/structure/ogimage'}"/>
+
+<!--/* Include Context Hub
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
+Normally include via sly but this is failing on stage publish
+ */-->
+<script type="text/javascript">
+     (function() {
+          window.ContextHub = window.ContextHub || {};
+
+          /* setting paths */
+          ContextHub.Paths = ContextHub.Paths || {};
+          ContextHub.Paths.CONTEXTHUB_PATH = "/libs/settings/cloudsettings/legacy/contexthub";
+          ContextHub.Paths.RESOURCE_PATH = "\/content\/zb\u002Dcontent\u002Dhub\/en\/_jcr_content\/contexthub";
+          ContextHub.Paths.SEGMENTATION_PATH = "\/conf\/zb\u002Dcontent\u002Dhub\/settings\/wcm\/segments";
+          ContextHub.Paths.CQ_CONTEXT_PATH = "";
+
+          /* setting initial constants */
+          ContextHub.Constants = ContextHub.Constants || {};
+          ContextHub.Constants.ANONYMOUS_HOME = "/home/users/X/X9Or1ykqdFGnm2SIe3ha";
+          ContextHub.Constants.MODE = "ui";
+     }());
+</script><script src="/etc/cloudsettings.kernel.js/libs/settings/cloudsettings/legacy/contexthub" type="text/javascript"></script>
+
+
+
+<!--/* Adobe launch */-->
+<script type="text/javascript">
+    if (window.location.hostname === 'www.thereadypatient.com' ||
+        window.location.hostname === 'thereadypatient.com') {
+         document.write('\x3Cscript type="text/javascript" src="//assets.adobedtm.com/launch-EN4c76bdb6be36411e96e64ad6fff4a6c2.min.js" async defer>\x3C/script>');
+    } else {
+         document.write('\x3Cscript type="text/javascript" src="//assets.adobedtm.com/launch-ENdb6139678d864a5eaa22c039c460c538-development.min.js" async defer>\x3C/script>');
+    }
+</script>
+
+<!--/* Google recaptcha form validation */-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

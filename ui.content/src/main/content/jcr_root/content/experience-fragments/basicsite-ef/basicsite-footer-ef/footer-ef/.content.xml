@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:xfVariantType="web"
+        cq:lastModified="{Date}2019-06-12T20:20:37.156Z"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/basicsite/settings/wcm/templates/experience-fragments-basicsite-footer-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer EF Variation"
+        sling:resourceType="cq/experience-fragments/components/xfpage"
+        socialMedia_x0040_TypeHint="String[]">
+        <root
+            jcr:lastModified="{Date}2019-06-05T20:36:03.414-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2019-06-06T03:27:24.795-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-06-06T03:27:24.795-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <footer
+                    jcr:created="{Date}2019-06-06T03:30:03.008-06:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-06-12T20:20:37.151Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="basicsite/components/structure/footer"
+                    fourthColumnTitle="Connect with us"
+                    legalText="&lt;p>UnitedHealthcare does not practice medicine and the content of this site is intended for general public interest. The website and its contents do not constitute medical, legal, or any other type of professional advice. Please consult with your physician or other healthcare professional for medical advice and see the 'Legal Notice' link. Patient testimonial results discussed on this site are not necessarily typical, indicative, or representative of all recipient patients. Results will vary due to health, weight, activity and other variables. Not all patients are candidates for the products/ procedures mentioned on this website, and only a medical professional can determine the treatment appropriate for your specific condition. Appropriate post-operative activities and pain will differ from patient to patient. Talk to your surgeon about whether joint replacement or other treatment is right for you and the risks associated therewith, including the risks of infection, implant wear, loosening, breakage or failure of implanted materials, any of which can necessitate additional surgery or treatment. For additional information or to find a surgeon near you, visit&amp;nbsp;&lt;a href=&quot;http://www.uhc.com/&quot;>www.uhc.com&lt;/a>&amp;nbsp;[or call 1-800-HIP-KNEE]. All content herein is protected by copyright, trademarks and other intellectual property rights, as applicable, owned by or licensed to UnitedHealthcare or its affiliates unless otherwise indicated, and must not be redistributed, duplicated or disclosed, in whole or in part, without the express written consent of UnitedHealthcare.&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <firstColumnLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/about-us"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/contributors"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/contact-us"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/unsubscribe"/>
+                    </firstColumnLinks>
+                    <secondColumnLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/find-a-doc"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/get-updates"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/shareyourstory"/>
+                    </secondColumnLinks>
+                    <thirdColumnLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/knees"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/basicsite/en/nav-sample-content/hips"/>
+                    </thirdColumnLinks>
+                    <fourthColumnLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.facebook.com"
+                            title="facebook"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.twitter.com"
+                            title="twitter"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.instagram.com"
+                            title="instagram"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.youtube.com"
+                            title="youtube"/>
+                    </fourthColumnLinks>
+                    <sixthColumnLinks jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.uhc.com/legal-notice.html"
+                            title="Legal Notice"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.uhc.com/privacy-policy.html"
+                            title="Privacy Policy"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.uhc.com/cookies-notice.html"
+                            title="Cookie Notice"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.uhc.com/"
+                            title="©2019 UnitedHealthcare"/>
+                    </sixthColumnLinks>
+                </footer>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

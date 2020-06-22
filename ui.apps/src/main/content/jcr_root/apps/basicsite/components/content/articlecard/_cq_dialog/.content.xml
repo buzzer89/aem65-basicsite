@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Article Card"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <patharticle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Article Path"
+                        name="./pathArticle"
+                        value="/content"/>
+                    <articleType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Article Type"
+                        name="./articleType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <nextarticle
+                                 jcr:primaryType="nt:unstructured"
+                                 text="Next Article"
+                                 value="next-article"/>
+                            <relatedarticle
+                               jcr:primaryType="nt:unstructured"
+                               text="Related Article"
+                               value="related-article"/>
+                            <miniarticle
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Mini Article"
+                                    value="mini-article"/>
+                        </items>
+                    </articleType>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

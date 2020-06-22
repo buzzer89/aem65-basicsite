@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:xfVariantType="web"
+        cq:lastModified="{Date}2019-06-05T18:08:44.347-06:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/basicsite/settings/wcm/templates/experience-fragments-basicsite-footer-template"
+        cq:xfMasterVariation="{Boolean}true"
+        jcr:description="Designed to use for header component"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ZB Footer Experience Fragment"
+        sling:resourceType="cq/experience-fragments/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <footer
+                jcr:created="{Date}2019-06-05T18:08:44.341-06:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-06-05T18:08:44.341-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="basicsite/components/structure/footer"/>
+        </root>
+    </jcr:content>
+</jcr:root>

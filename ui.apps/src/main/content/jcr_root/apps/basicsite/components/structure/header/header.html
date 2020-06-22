@@ -1,0 +1,113 @@
+<!--/* DO NOT EDIT!!! -- THIS FILE IS AUTO GENERATED -- DO NOT EDIT!!! */-->
+<!--/* (see: /elements/modifiers/Sly/Sly.example.jsx) */-->
+
+<div class="header header--default" data-sly-use.selectorCheck="com.adobe.aem.guides.basicsite.core.models.utils.SelectorCheck" data-sly-test="${!selectorCheck.isEmbedded}">
+  <div class="wrapper wrapper--default">
+    <sly data-sly-use.navigation="com.adobe.aem.guides.basicsite.core.models.MainNavigationHeaderModel" data-sly-unwrap>
+    </sly>
+    <div class="header__column">
+      <div class="brand brand--header">
+        <a class="link link--default" href="${properties.linkToHome}.html">
+<!--          <img alt="ReadyPatient - Brought to you by UnitedHealthcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/logo-desktop.svg" class="image image&#45;&#45;default full-logo" />-->
+<!--          <img alt="ReadyPatient - Brought to you by UnitedHealthcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/logo-desktop-sticky.svg" class="image image&#45;&#45;default sticky-logo" />-->
+<!--          <img alt="ReadyPatient - Brought to you by UnitedHealthcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/logo-mobile.svg" class="image image&#45;&#45;default mobile-logo" />-->
+<!--          <img alt="ReadyPatient - Brought to you by UnitedHealthcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/logo-mobile-sticky.svg" class="image image&#45;&#45;default mobile-sticky-logo" />-->
+              <img alt="UnitedeServices - Brought to you by UnitedHeathcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/ees-logo.svg" class="image image--default full-logo" />
+              <img alt="UnitedeServices - Brought to you by UnitedHeathcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/ees-logo.svg" class="image image--default sticky-logo" />
+              <img alt="UnitedeServices - Brought to you by UnitedHeathcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/ees-logo.svg" class="image image--default mobile-logo" />
+              <img alt="UnitedeServices - Brought to you by UnitedHeathcare" src="/etc.clientlibs/basicsite/clientlibs/main/resources/img/ees-logo.svg" class="image image--default mobile-sticky-logo" />
+        </a>
+      </div>
+    </div>
+    <div class="header__column">
+      <div class="navigation navigation--default flex flex--column">
+        <nav class="navigation__row navigation__utility navigation__utility--header">
+          <sly data-sly-unwrap data-sly-list="${navigation.ctaLinks}">
+            <a class="link link--default nav-utility" data-nav-utility-link="${item.title}" href="${item.path @ context='uri'}.html" data-sly-text="${(item.title) ? item.title : ''}">Share Your Story</a>
+
+          </sly>
+        </nav>
+        <nav class="navigation__row navigation__primary">
+          <div class="navigation__buttons">
+            <button class="button button--default button--auto search-button">
+              <svg class="icon icon--search icon--normal icon--default">
+                <use xlink:href="#icon-search">
+                </use>
+              </svg> Search </button>
+            <button class="button button--default button--auto back-button">
+              <svg class="icon icon--left-pointer icon--normal icon--default">
+                <use xlink:href="#icon-left-pointer">
+                </use>
+              </svg> Back </button>
+            <button class="button button--default button--auto primary-button after">
+              <svg class="icon icon--hamburger icon--normal icon--default">
+                <use xlink:href="#icon-hamburger">
+                </use>
+              </svg> Menu </button>
+          </div>
+          <div class="search search--header">
+            <form class="form form--default site-search" action="${properties.searchLink}.html" method="get" autoComplete="off">
+              <fieldset class="form-fieldset form-fieldset--default">
+                <legend hidden="">Use this form to search content hub.</legend>
+                <div class="input field input-text input--springwood">
+                  <label for="search-query" class="field__label">
+                  </label>
+                  <input type="text" id="search-query" class="field__native" name="query" required="" pattern=".*[^ ].*" data-error-placeholder="Please enter search term(s)" placeholder="Search" />
+                </div>
+                <button class="button button--secondary button--auto search-submit" type="submit">Search </button>
+              </fieldset>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="navigation__menu navigation__menu--default">
+        <ul class="list list--blank navigation__menu--top-level nav-link" data-sly-list="${navigation.megaMenu}">
+
+          <li class="list__item list__item--item">
+            <a class="link link--default nav-link" href="${item.path}.html" data-nav-menu-link="${item.title}" data-sly-text="${(item.title) ? item.title : ''}">Top level link</a>
+            <sly data-sly-test="${navigation.journeyMegaMenu[item.path]}">
+              <svg class="icon icon--chevron-white icon--normal icon--default">
+                <use xlink:href="#icon-chevron-white">
+                </use>
+              </svg>
+            </sly>
+          </li>
+
+
+          <sly data-sly-unwrap data-sly-test="${itemList.last}" data-sly-list="${navigation.ctaLinks}">
+            <li class="list__item list__item--item utility">
+              <a class="link link--default" href="${item.path}.html" data-sly-text="${(item.title) ? item.title : ''}">Share Your Story</a>
+            </li>
+
+          </sly>
+
+
+
+        </ul>
+        <div class="navigation__menu--sub-level">
+          <sly data-sly-list="${navigation.megaMenu}">
+            <ul class="list list--blank" data-sly-list.journey="${navigation.journeyMegaMenu[item.path]}">
+              <li class="list__item list__item--item">
+                <sly data-sly-test="${journey.Data}">
+                  <sly data-sly-test.addFilter="#journey:${journey.Data}">
+                  </sly>
+                </sly>
+                <sly data-sly-test="${!journey.Data}">
+                  <sly data-sly-test.addFilter="">
+                  </sly>
+                </sly>
+                <a class="link link--default nav-link__sub-level" data-nav-menu-link="${journey.Data}" href="${item.path @ context='uri'}.html${addFilter}" data-sly-text="${journey.Title}">Sub level link</a>
+              </li>
+              <sly data-sly-test="${childList.last}">
+                <li class="list__item list__item--item">
+                  <a class="link link--default nav-link__sub-level" data-nav-menu-link="${item.title}" href="${child.parentPath @ context='uri'}.html" data-sly-text="${(child.customParentTitle) ? child.customParentTitle : ''}">Last Sub level link</a>
+                </li>
+              </sly>
+            </ul>
+          </sly>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

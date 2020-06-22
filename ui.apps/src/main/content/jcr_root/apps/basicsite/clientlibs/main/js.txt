@@ -1,0 +1,2 @@
+#base=resources
+js/assets.js
