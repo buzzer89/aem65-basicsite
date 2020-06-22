@@ -20,12 +20,6 @@ import javax.jcr.Node;
 import javax.jcr.RepositoryException;
 import java.util.*;
 
-/**
- * Provides information from Article Header component
- *
- * @author ConexioGroup (nmuscarelli)
- */
-
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
 public class ArticleCardModel {

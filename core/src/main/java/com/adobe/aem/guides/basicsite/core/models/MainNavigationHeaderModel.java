@@ -23,12 +23,6 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 
-/**
- * Provides functionalities related to whole header section
- *
- * @author ConexioGroup (isosa)
- */
-
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
 public class MainNavigationHeaderModel {
